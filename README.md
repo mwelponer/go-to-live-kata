@@ -43,6 +43,7 @@ Download, unzip and then scp the script files onto the remote server (let's assu
 
 ```
 $ scp ~/kata.sh mike@example.net:/home/mike/
+$ scp ~/mysql_secure_installation mike@example.net:/home/mike/
 $ ssh mike@example.net
 $ sh kata.sh
 
