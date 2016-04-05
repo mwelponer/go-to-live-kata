@@ -53,7 +53,7 @@ The script
 
 The script will verify the installation of few Wordpress dependencies: php, apache, mysql and wp-cli, a tool to automate/manage the wp installation from the command
 prompt.
-It will then proceed with the installation of Wordpress, the installation of few plugins to improve security and speed and finally the creation of the apache virtualhost.
+It will then proceed with the installation of Wordpress and with the installation of few plugins to improve security and speed. Mysql will then be secured removing test dbs root remote access, change of the root password. File permissions on wp folders and files will be tuned based on recommendations from http://codex.wordpress.org/Hardening_WordPress#File_permissions. Finally the apache virtualhost will be created.
 
 
 #Further enhancements
@@ -61,7 +61,7 @@ It will then proceed with the installation of Wordpress, the installation of few
 Security/speed Issues and optimizations
 ---------
 
-we can speed up the response time using one or few of the following techniques:
+we can further speed up the response time using one or few of the following techniques:
 
 - apache cache (e.g., file cache / mem cache)
 - mysql config tuning
@@ -70,7 +70,7 @@ we can speed up the response time using one or few of the following techniques:
 - app multi istances + load balancer (see apache mod_proxy_balancer)
 
 If we use a load balancer we can have a single db for example on a dedicated server, private IP with the istances pointing to it. We then need to deal with managing a multi instance queue.
-As another option we can have multi instances with dedicated dbs. We then need to deal with databases synchronization. Other solutions are also possible, multiple virtual machines, clustering and need to be properly evaluated according to the specific case.
+As another option we can have multi instances with dedicated dbs. We then need to deal with databases synchronization. We can have different solutions, multiple virtual machines, clustering, etc.. things need to be properly evaluated according to the specific case.
 
 Security can be further improved keeping instances and db/dbs on private IPs (disallow remote db access) while leaving apache as frontend with public IPs
 
