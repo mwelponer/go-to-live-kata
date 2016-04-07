@@ -80,7 +80,7 @@ Security can be further improved keeping instances and db/dbs on private IPs (di
 Deployment automations
 ----
 
-We can automate the process of deploying of new versions of wp using capistrano. The configuration is trivial. Capistrano permits to keep track of all the site versions and to fast roll back to a previous version if everything goes wrong after a new deployment.
+We can automate the process of deploying of new versions of wp using capistrano. The configuration is trivial. Capistrano permits to keep track of all the site versions and to fast roll back to a previous version if anything goes wrong after a new deployment.
 
 See the link https://github.com/Mixd/wp-deploy
 
